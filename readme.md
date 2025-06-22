@@ -60,6 +60,18 @@ Context is middling at 8000T, and 10 benchmarks fail as they are too big.
 
 ![](/images/gemma2-model_accuracy_vs_speed_tps.png)
 
+## Gemma 3 12B Q4
+
+This model is vision capable. Text accuracy isn't as good as Qwen 3
+
+Vulkan is slightly faster.
+
+At 20000T context it run all the benchmarks
+
+![](/images/gemma3-12B-Q4-model_accuracy_vs_speed_tps.png)
+
+[Raw Vulkan](/result/2025-06-22_15_07-aggregate-TowerOfBabel-gemma-3-12b-it@q4_k_m-Q4_K_M-vulkan.json) [Raw ROCm](/result/2025-06-22_15_59-aggregate-TowerOfBabel-gemma-3-12b-it@q4_k_m-Q4_K_M-rocm.json)
+
 ## Qwen 3 14B Q4
 
 This is a much higher performance model, here ROCm wins out in speed meaningfully, both in question and in answer.
